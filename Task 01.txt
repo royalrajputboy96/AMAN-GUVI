@@ -1,0 +1,57 @@
+Do a write up for the followings:? 
+1. Difference between HTTP1.1 vs HTTP2
+Ans- As opposed to HTTP/1.1, which keeps all requests and responses in plain text format, HTTP/2
+ uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers
+
+
+2. http version history 
+Ans-In 1989, while he was working at CERN, Tim Berners-Lee wrote a proposal to build a hypertext system over the Internet. Initially calling it the Mesh
+ it was later renamed to World Wide Web during its implementation in 1990. Built over the existing TCP and IP protocols, it consisted of 4 building blocks:
+
+A textual format to represent hypertext documents, the HyperText Markup Language (HTML).
+A simple protocol to exchange these documents, the HypertText Transfer Protocol (HTTP).
+A client to display (and accidentally edit) these documents, the first Web browser called WorldWideWeb.
+A server to give access to the document, an early version of httpd.
+These four building blocks were completed by the end of 1990, and the first servers were already running outside of CERN by early 1991. On August 6th 1991,
+ Tim Berners-Lee's post on the public alt.hypertext newsgroup is now considered as the official start of the World Wide Web as a public project.
+
+The HTTP protocol used in those early phases was very simple, later dubbed HTTP/0.9, and sometimes as the one-line protocol.
+
+3. List 5 difference between Browser JS(console) vs Nodejs 
+Ans-    
+1.      Javascript is a programming language that is used for writing scripts on the website.
+	NodeJS is a Javascript runtime environment.
+2.	Javascript can only be run in the browsers.
+	NodeJS code can be run outside the browser.
+3.	It is basically used on the client-side.
+	It is mostly used on the server-side.
+4.	Javascript is capable enough to add HTML and play with the DOM.	
+        Nodejs does not have capability to add HTML tags.
+5.	Javascript can run in any browser engine as like JS core in safari and Spidermonkey in Firefox.
+	Nodejs can only run in V8 engine of google chrome.
+
+4. what happens when you type a URL in the address bar in the browser?
+Ans- URL stands for Uniform Resource Locator. URL is the address of the website which you can find in the address bar of your web browser. It is a reference to a resource on the internet, be it images, hypertext pages, audio/video files, etc.
+
+Example :
+
+https://practice.geeksforgeeks.org/ 
+What is DNS :
+DNS is short for Domain Name System. Like a phonebook, DNS maintains and maps the name of the website, i.e. URL, and particular IP address it links to. Every URL on the internet has a unique IP address which is of the computer which hosts the server of the website requested.
+
+Steps for what happens when we enter a URL :
+
+1-Browser checks cache for DNS entry to find the corresponding IP address of website.
+It looks for following cache. If not found in one, then continues checking to the next until found.
+-Browser Cache
+-Operating Systems Cache
+-Router Cache
+-ISP Cache
+2-If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+  The requests are sent using small data packets that contain information content of request and IP address it is destined for.
+3-Browser initiates a TCP (Transfer Control Protocol) connection with the server using synchronize(SYN) and acknowledge(ACK) messages.
+4-Browser sends an HTTP request to the web server. GET or POST request.
+5-Server on the host computer handles that request and sends back a response. It assembles a response in some format like JSON, XML and HTML.
+6-Server sends out an HTTP response along with the status of response.
+7-Browser displays HTML content
+8-Finally, Done.
